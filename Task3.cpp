@@ -1,38 +1,27 @@
 #include <iostream>
 using namespace std;
+
+struct student
+{
+    char name[50];
+    int credits;
+    float cgpa;
+};
+
 int main()
 {
-    int arr[] = { 1, 2, 2, 3, 4, 4, 4, 5, 5 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    {
-    for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
+    student s;
+    cout << "Enter information," << endl;
+    cout << "Enter name: ";
+    cin >> s.name;
+    cout << "Number of Credits Completed: ";
+    cin >> s.credits;
+    cout << "CGPA: ";
+    cin >> s.cgpa;
 
-int removeDuplicates(int arr[], int n)
-
-    if (n == 0 || n == 1);
-
-
-
-        return n;
-    }
-    nt temp[n];
-
-    int j = 0;
-
-    for (int i = 0; i < n - 1; i++)
-        if (arr[i] != arr[i + 1])
-            temp[j++] = arr[i];
-
-
-    temp[j++] = arr[n - 1];
-
-    for (int i = 0; i < j; i++)
-        arr[i] = temp[i];
-
-    return j;
-}
-
-
+    cout << "\nDisplaying Information," << endl;
+    cout << "Name: " << s.name << endl;
+    cout << "Credits: " << s.credits << endl;
+    cout << "CGPA: " << s.cgpa << endl;
     return 0;
 }
